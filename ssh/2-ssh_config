@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# my config file ssh
+
+
+IdentifyFile ~/.ssh/school
+
+
+PasswordAuthentication no
+HostName    54.82.99.63
+User	ubuntu
+
