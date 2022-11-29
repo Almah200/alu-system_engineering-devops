@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This script will change user from root to nginx user
+echo 'user nginx;' > /etc/nginx/nginx.conf
+echo 'listen 8080 default;' > /etc/nginx
