@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-#This script will change user from root to nginx user
+#This script will change user from root to nginx user and listen to port 8080
 echo 'user nginx;' > /etc/nginx/nginx.conf
-echo 'listen 8080 default;' > /etc/nginx
+sed -i 's/80/8080/' /etc/nginx/sites-available/default
+sudo service nginx restart
