@@ -1,6 +1,6 @@
 #script to solve the 500 error
 
-exec {'replce':
+exec {'change':
   provider => shell,
-  command => 'sed -i "s/phpp/php/g" /var/www/html/wp-settings.php'
+  command => 'sed -i "s/phpp/php/g" /var/www/html/wp-settings.php',
  }
